@@ -1,187 +1,195 @@
-# Awesome-Decentralized-Social-Networks
+<div align="center">
 
-## Top Decentralized Social Networks Ecosystem
+![Awesome Decentralized Social Networks Banner](./assets/banner.svg)
 
+# 🌐 Awesome Decentralized Social Networks
 
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![ActivityPub](https://img.shields.io/badge/Fediverse-ActivityPub-purple?style=flat-square&logo=activitypub)](https://activitypub.rocks/) [![ATProto](https://img.shields.io/badge/Protocol-ATProto-blue?style=flat-square)](https://atproto.com/) [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/) <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+**A definitive, curated landscape of decentralized social networks, federated communication protocols, open-source community platforms, and self-hosted Web3/Fediverse ecosystems.**
 
-*Focused on Federated Protocols, Community Moderation & Link Aggregation*  
+*Empowering developers, community builders, privacy advocates, and organizations to reclaim sovereign identity and distributed social graphs.*
 
-**Last updated: October 2026**
+🕒 **Last updated: October 2026**
 
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Decentralized Social Networks**. These tools enable communities to own their social graph and content—from federated link aggregators where independent servers sync with each other to self-hosted forums that give administrators complete control over moderation and data.
-
-
-
-**Examples** include Lemmy, Mastodon, Discourse, Flarum, NodeBB, Friendica, PieFed, Mbin, Hubzilla, and GoToSocial (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, federated communication, and open community infrastructure—ideal for community managers, privacy advocates, and organizations seeking transparent, vendor-independent social platforms.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-### Sector Overview & Market Dynamics
-
-The global dedicated online community and enterprise social network platform market is estimated at approximately $1.5B to $2.2B (expected to surpass $5B+ by the early 2030s), while the broader social networking ecosystem exceeds $150B+. The sector exhibits a bifurcated market structure: the consumer social layer is concentrated and dominated by winner-take-most ad platforms, whereas the community and discussion software SaaS space is moderately-to-highly fragmented across creator niches, developer forums, and enterprise customer-success hubs.
-
-## SaaS/Hosted Platforms
-
-| Product | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| **Reddit** | ~$30B–$35B market cap ($2.2B FY2025 revenue) | $0 (Ad-supported user model); Reddit Premium starts at $5.99/mo | Free forever plan with full access to browse, post, and create communities (ad-supported; API subject to standard free tier rate limits: 100 queries/min) | The centralized link aggregator standard. Fully proprietary and cloud-hosted. **No federation, no self-hosting**—the platform operator controls moderation policy, API access, and data. Best for communities that prioritize network effects and reach over sovereignty. |
-| **Khoros Communities** | ~$250M–$284M annual revenue (Acquired by IgniteTech, private) | Starts at ~$50,000/year (~$4,166/mo entry mid-market/enterprise contract) | No free tier or public self-serve trial (requires a scheduled sales-assisted demo) | Enterprise community platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for large enterprises needing integrated social customer care. |
-| **Circle.so** | ~$55M–$68M ARR ($33M+ funding, private) | $89/mo (billed annually) or $99/mo (billed monthly) on Professional Plan | 14-day free trial on Professional and Business plans (full feature access, up to 3 admins and 10 moderators; no credit card required) | Centralized community platform for creators and businesses. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for creators wanting a polished, managed community experience. |
-| **Discourse (Hosted)** | ~$10M–$15M ARR (Private) | $0/mo (Free Managed Plan); Paid managed plans start at $100/mo (Standard) | Free forever managed plan hosted on `.discourse.group` subdomain (limited to 2 staff seats, 5GB storage, 20,000 monthly emails, and community plugin set) | **Official managed hosting** for Discourse forums. Features **business-class hosting** with automatic updates and support. **Note**: The software itself is open source (GPL v2)—hosting is a convenience service. **Best for**: teams wanting Discourse's features without server management. |
-| **Mighty Networks** | ~$8M–$10M annual revenue (~$100M–$250M valuation, private) | $79/mo (billed annually) or $95/mo (billed monthly) on Launch Plan ($29/mo on Explore Plan) | 14-day free trial with full Growth Plan features (unlimited members, events, spaces, and course creation testing; no credit card required) | Centralized community and course platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for creators combining community with paid content. |
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **Lemmy**  
-
-  **A link aggregator and forum for the fediverse** (AGPL-3.0) — **the Reddit alternative** . **Server is written in Rust** for high performance; **front end is ~80kB gzipped**; **supports arm64 / Raspberry Pi** . **Federated architecture**: anyone can run a server, and **all servers are federated (think email)**—a user on one server can subscribe to forums on any other server and discuss with users registered elsewhere . **Features**: **live-updating comment threads**, **full vote scores (+/-) like old Reddit**, **themes (light, dark, solarized)**, **integrated image uploading**, **user tagging with @ and community tagging with !**, **notifications on replies and tags**, **private messaging**, **RSS/Atom feeds**, **cross-posting with similar post search**, and **moderation abilities** (public logs, sticky posts, lock/remove/restore, ban/unban, transfer communities) . **Can fully erase your data**, replacing all posts and comments . **Deployment**: Docker and Ansible . **The reference implementation for federated link aggregation** — **the dominant "Threadiverse" platform** with 423 servers and roughly 43,000 MAU, ahead of Misskey and Pleroma .
-
-
-
-- **Mastodon**  
-
-  **Your self-hosted, globally interconnected microblogging community** (AGPLv3) — **the flagship fediverse platform** . **Based on ActivityPub** with no vendor lock-in—users on one server can seamlessly communicate with users on another, including non-Mastodon software that implements ActivityPub . **Features**: **real-time chronological timelines**, **media attachments**, **safety and moderation tools** (private posts, locked accounts, phrase filtering, muting, blocking, reporting), **OAuth2 and REST/Streaming APIs** for a rich app ecosystem . **Mastodon 4.6** (June 2026) adds **email newsletters** (reaching readers without a fediverse account—deliberately off by default due to server costs), **Collections** (shareable lists of up to 25 profiles, with opt-in requirements and abuse prevention), **redesigned profiles** with in-place editing and alt text for profile pictures/headers, and **accessibility improvements** sponsored in part by the Dutch government . **The largest fediverse platform** with roughly **735,000 MAU**—still a fraction of centralized alternatives . **Best for**: organizations and individuals wanting **microblogging with federation** and a proven moderation model.
-
-
-
-- **Discourse**  
-
-  **A platform for community discussion. Free, open, simple** (GPL v2) — **the forum standard** . **Battle-tested for over a decade** with a **flattened discussion** model (no threading pain), **self-learning moderation**, and **seamless web-only interface** . **Tech stack**: **Ruby on Rails** API, **Ember.js** front end, **PostgreSQL**, **Redis** . **Recent additions**: **built-in MCP server** (disabled by default) letting AI apps search, read, summarize, and write to your community after user approval; **Ask AI dashboard** showing what users are asking and tracking unanswered questions . **Rich text editor** now edits dates, polls, tables, and graphviz diagrams without switching to Markdown . **Requirements**: **Ruby 3.2+, PostgreSQL 13, Redis 7** — **resource-heavy (~1–2 GB RAM)** compared to lighter alternatives . **The reference implementation for long-form community discussion**.
-
-
-
-- **Flarum**  
-
-  **Simple forum software for building great communities** (MIT) — **the lightweight modern choice** . **Fast and simple**—no clutter, no bloat, no complex dependencies; **built with PHP** and powered by **Mithril.js** for a tiny frontend footprint . **Beautiful and responsive**—consistent and intuitive across platforms out-of-the-box. **Powerful and extensible**—**1,600+ community extensions** covering tags, mentions, SSO, OAuth, file uploads, SEO, analytics, and more; **JSON:API compliant REST API** for custom integrations . **Flarum 2.0.0** released October 2026 . **Resource footprint**: **~256 MB RAM**—**significantly lighter than Discourse** . **Best for**: teams wanting **a fast, clean forum with minimal resource requirements** and a rich extension ecosystem.
-
-
-
-- **NodeBB**  
-
-  **Node.js based forum software built for the modern web** (GPL-3) — **the real-time choice** . **Powered by Node.js**, supports **Redis, MongoDB, or PostgreSQL**; utilizes **web sockets for instant interactions and real-time notifications** . **Takes the best of the modern web**: **real-time streaming discussions**, **mobile responsiveness**, and **rich RESTful read/write APIs**—while staying true to bulletin board hierarchies, local user accounts, and asynchronous messaging . **Theming engine** is highly flexible; base theme uses **Bootstrap 5** . **ActivityPub federation support** via plugins—v4.15.0 added **fediverse chat privileges** and **opportunistic backfilling** of remote topics . **Requirements**: **Node.js 22+, MongoDB 5+ or Redis 7.2+** . **The reference implementation for real-time forum software**.
-
-
-
-- **Friendica**  
-
-  **Your open and free social network** (AGPLv3) — **the multi-protocol bridge** . **Connects to a federated communications network of thousands of servers called the Fediverse**—you can interact with anyone on Friendica, **Mastodon, Lemmy, Diaspora, Misskey, Peertube, Pixelfed, Pleroma**, and many more . **Receiving content from Tumblr, WordPress, and RSS is also possible** . **The oldest active federated social network** (running since 2010)—**six years before Mastodon** . **Protocol breadth is the core goal**: ActivityPub, Diaspora, DFRN, OStatus, email via IMAP/SMTP, RSS/Atom, and plugins for Bluesky and WordPress . **UX is closer to a classic social network** (rich BBCode editor, circle-based contact management, events with RSVPs, granular per-post privacy) than a microblog stream . **Runs on PHP and MySQL**—**if you can run WordPress, you can run Friendica** . **The "federation world champion"** —actively maintained but largely absent from fediverse growth conversations .
-
-
-
-- **PieFed**  
-
-  **A growing Lemmy alternative** with **76 servers and around 4,800 MAU** . **Part of the Threadiverse**—link aggregation and threaded discussion on ActivityPub. **Best for**: communities wanting a Lemmy-compatible alternative with different moderation or UX choices.
-
-
-
-- **Mbin**  
-
-  **A Threadiverse platform** with **around 1,300 MAU** . **Federates via ActivityPub**—Mastodon users can follow Mbin communities. **Best for**: smaller communities exploring the link aggregation model.
-
-
-
-- **Hubzilla**  
-
-  **Created by Mike Macgirvin** (the developer behind DFRN, the protocol Friendica used before ActivityPub) — **the nomadic identity choice** . **Speaks ActivityPub and its own Zot (now Nomad) protocol simultaneously** . **Nomadic identity**: your account can be **cloned across multiple hubs**—if one hub goes offline, your identity, social graph, and content survive intact on the others . **Goes well beyond what ActivityPub's built-in account migration supports**—closer to true portable identity than anything else in the fediverse. **The trade-off**: **considerably harder to set up and administer** than Friendica; **~1,450 MAU** reflects a specialist audience . **Best for**: power users who prioritize **portable identity and protocol flexibility** over ease of deployment.
-
-
-
-- **GoToSocial**  
-
-  **Exists for people who want a personal fediverse presence but find Mastodon too resource-heavy to self-host** . **Currently in beta** with a **v1.0 release projected for 2026** . **Best for**: individuals wanting a **lightweight personal fediverse server**.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Discourse AI** — Official AI plugin for Discourse (GPL v2) . **Adds AI-powered search, summaries, and chatbot functionality** to self-hosted Discourse forums .
-
-- **NodeBB ActivityPub** — Federation plugin for NodeBB (GPL-3) . **Bridges NodeBB forums to the fediverse**—Mastodon users can follow and interact with NodeBB content .
-
-- **Lemmy UI** — Frontend for Lemmy (AGPL-3.0) . **The ~80kB gzipped frontend**—clean, mobile-friendly interface .
-
-- Community **n8n** workflows for fediverse cross-posting automation and community moderation alerting.
-
-
-
-**Frameworks for building custom systems**: Combine **Lemmy** for federated link aggregation with **Mastodon** for microblogging, **Discourse** or **Flarum** for long-form discussion, **Friendica** for multi-protocol bridging, and **Hubzilla** for nomadic identity—creating a comprehensive decentralized social stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Decentralized social networks handling user content and social graphs must be evaluated for **moderation effectiveness**, **federation metadata leakage**, and **long-term project viability**.
-
-- **The "Reddit alternative" distinction matters.** **Lemmy** is the dominant federated link aggregator—**423 servers and ~43,000 MAU**—with Reddit-like voting, cross-posting, and moderation . **But the interaction model (communities as primary unit, upvotes rather than boosts) is different enough that the Threadiverse and microblog social graphs rarely overlap** . **Choose based on whether you want discussions or broadcasts.**
-
-- **The "forum software" distinction is about depth vs. lightness.** **Discourse** is battle-tested for a decade with flattened discussion and self-learning moderation—**but requires 1–2 GB RAM and a complex Rails/Ember stack** . **Flarum** is **~256 MB RAM** with 1,600+ extensions—**significantly lighter and simpler** . **NodeBB** brings **real-time web sockets and REST APIs** to the forum model . **Match the tool to your operational capacity and community size.**
-
-- **Friendica's protocol breadth is unique and underappreciated.** It **connects to Mastodon, Lemmy, Diaspora, Misskey, Peertube, Pixelfed, Pleroma**, and more—**plus email, RSS, Tumblr, WordPress, and Bluesky via plugins** . **It's the "federation world champion"** that the growth conversations ignore . **If you want one timeline spanning multiple networks, Friendica is the only serious option.**
-
-- **Hubzilla's nomadic identity is genuinely novel.** **Clone your account across multiple hubs**—if one goes offline, your identity, social graph, and content survive . **This is closer to true portable identity than anything else in the fediverse.** **But the complexity is real**—Hubzilla is harder to set up than Friendica, and its ~1,450 MAU reflects a specialist audience .
-
-- **Mastodon's email newsletters are a strategic bet on growth.** **Reaching readers without a fediverse account**—just an inbox—**lowers the barrier to following a creator** . **But it's off by default** due to server costs, and **it doesn't solve the network effects problem** that keeps Mastodon at ~735,000 MAU . **The feature extends the institutional hosting bet**—giving organizations a reason to choose Mastodon over other publishing platforms.
-
-- Self-hosted open-source solutions require proper server management, moderation policy, and ongoing maintenance. **Decentralized does not mean zero-maintenance**—it means you own the moderation, the upgrades, and the backups.
-
-
+</div>
 
 ---
 
+## 🧭 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [💼 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [⭐ Ranked Open-Source Projects (by Stars)](#-ranked-open-source-projects-by-stars)
+  - [🧩 Protocols & Independent Open-Source Platforms](#-protocols--independent-open-source-platforms)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer](#-disclaimer)
 
-**Made for community managers, privacy advocates, and organizations building transparent decentralized social solutions.**  
+---
 
-Let's make Decentralized Social Networks more open, data-driven, and federated.
+## 📊 Sector Overview & Market Dynamics
+
+The global dedicated online community and enterprise social network platform market is estimated at approximately **$1.5B to $2.2B** (projected to exceed **$5B+ by 2032** at an 11–13% CAGR), while the broader consumer social networking advertising ecosystem surpasses **$150B+**. 
+
+The sector exhibits a clear **bifurcated market structure**:
+1. **The Consumer Social Layer**: Highly concentrated and dominated by winner-take-most advertising monopolies (Reddit, Meta, X) driven by massive centralized network effects and proprietary data locking.
+2. **The Community Software & SaaS Layer**: Moderately-to-highly fragmented across creator communities, enterprise support portals, and self-hosted open-source software. 
+
+A growing movement toward **data sovereignty, federated protocols (ActivityPub, ATProto, Nostr, Matrix), and regulatory anti-monopoly pressures** is rapidly driving communities toward self-hosted and federated alternatives where operators own their social graph, moderation policies, and member identity.
+
+---
+
+## 💼 SaaS/Hosted Platforms
+
+| Product | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **Reddit** | ~$30B–$35B market cap ($2.2B FY2025 revenue) | $0 (Ad-supported user model); Reddit Premium starts at $5.99/mo | Free forever plan with full access to browse, post, and create communities (ad-supported; API subject to standard free tier rate limits: 100 queries/min) | 🌐 The centralized link aggregator standard. Fully proprietary and cloud-hosted. **No federation, no self-hosting**—the platform operator controls moderation policy, API access, and data. Best for communities prioritizing maximum audience reach over data sovereignty. |
+| **Khoros Communities** | ~$250M–$284M annual revenue (Acquired by IgniteTech, private) | Starts at ~$50,000/year (~$4,166/mo entry mid-market/enterprise contract) | No free tier or public self-serve trial (requires a scheduled sales-assisted demo) | 🏢 Enterprise community and customer engagement platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—ideal for global enterprises requiring unified brand care, CRM integrations, and compliance. |
+| **Circle.so** | ~$55M–$68M ARR ($33M+ funding, private) | $89/mo (billed annually) or $99/mo (billed monthly) on Professional Plan | 14-day free trial on Professional and Business plans (full feature access, up to 3 admins and 10 moderators; no credit card required) | 🎨 Centralized community platform for creators and businesses. Fully proprietary and cloud-hosted. **No federation or self-hosting**—engineered for creators wanting polished discussions, paywalls, and courses in one hub. |
+| **Discourse (Hosted)** | ~$10M–$15M ARR (Private) | $0/mo (Free Managed Plan); Paid managed plans start at $100/mo (Standard) | Free forever managed plan hosted on `.discourse.group` subdomain (limited to 2 staff seats, 5GB storage, 20,000 monthly emails, and community plugin set) | 💬 **Official managed hosting** for Discourse forums. Features **business-class hosting** with automatic upgrades, backups, and support. **Note**: The core software is open source (GPL-2.0)—hosting is a managed convenience service. |
+| **Mighty Networks** | ~$8M–$10M annual revenue (~$100M–$250M valuation, private) | $79/mo (billed annually) or $95/mo (billed monthly) on Launch Plan ($29/mo on Explore Plan) | 14-day free trial with full Growth Plan features (unlimited members, events, spaces, and course creation testing; no credit card required) | 🚀 Centralized community and course platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for educators and brands monetizing content, cohort courses, and discussions. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Explore the leading decentralized, federated, and self-hosted social networking solutions. All repositories below are **strictly sorted in descending order by GitHub Star count**.
+
+### ⭐ Ranked Open-Source Projects (by Stars)
+
+1. ### **Mastodon** [![GitHub stars](https://img.shields.io/github/stars/mastodon/mastodon?style=social&color=white)](https://github.com/mastodon/mastodon/stargazers)
+   - **Repository**: [mastodon/mastodon](https://github.com/mastodon/mastodon) *(License: AGPL-3.0)*
+   - **Category**: Federated Microblogging & Social Streaming
+   - **Overview**: The flagship server and web UI for the Fediverse, powered by the W3C ActivityPub protocol. Allows independent communities to federate seamlessly without vendor lock-in. Features real-time chronological feeds, comprehensive anti-abuse/moderation toolkits, media attachments, and rich REST/Streaming APIs. Mastodon 4.6+ introduces native newsletter broadcasting and curated lists, serving as the benchmark for open social graph interoperability.
+
+2. ### **Discourse** [![GitHub stars](https://img.shields.io/github/stars/discourse/discourse?style=social&color=white)](https://github.com/discourse/discourse/stargazers)
+   - **Repository**: [discourse/discourse](https://github.com/discourse/discourse) *(License: GPL-2.0)*
+   - **Category**: Long-Form Community Discussion & Modern Forums
+   - **Overview**: The gold standard for modern, long-form discussion forums. Built on Ruby on Rails and Ember.js with PostgreSQL and Redis. Highlights include dynamic endless scrolling, flattened conversational threading, trust-level progression, and self-learning community moderation. Recent versions pack built-in Model Context Protocol (MCP) servers and AI dashboards to assist community managers with automated summarization.
+
+3. ### **PeerTube** [![GitHub stars](https://img.shields.io/github/stars/Chocobozzz/PeerTube?style=social&color=white)](https://github.com/Chocobozzz/PeerTube/stargazers)
+   - **Repository**: [Chocobozzz/PeerTube](https://github.com/Chocobozzz/PeerTube) *(License: AGPL-3.0)*
+   - **Category**: Federated Peer-to-Peer Video Streaming & Podcasting
+   - **Overview**: Developed by Framasoft, PeerTube is the decentralized, ActivityPub-based alternative to YouTube. It employs WebTorrent and WebRTC for browser-based peer-to-peer video distribution, dramatically slashing server bandwidth costs. Supports live streaming with chat, video transcoding, multi-channel management, and cross-server federation.
+
+4. ### **NodeBB** [![GitHub stars](https://img.shields.io/github/stars/NodeBB/NodeBB?style=social&color=white)](https://github.com/NodeBB/NodeBB/stargazers)
+   - **Repository**: [NodeBB/NodeBB](https://github.com/NodeBB/NodeBB) *(License: GPL-3.0)*
+   - **Category**: Real-Time WebSockets Forum Software
+   - **Overview**: Next-generation forum software written in Node.js supporting MongoDB, Redis, and PostgreSQL backends. Leverages real-time WebSockets for instantaneous comment streaming, mentions, and notifications. With native ActivityPub plugins, NodeBB instances can federate directly into the Fediverse, allowing remote Mastodon users to reply to forum topics.
+
+5. ### **Lemmy** [![GitHub stars](https://img.shields.io/github/stars/LemmyNet/lemmy?style=social&color=white)](https://github.com/LemmyNet/lemmy/stargazers)
+   - **Repository**: [LemmyNet/lemmy](https://github.com/LemmyNet/lemmy) *(License: AGPL-3.0)*
+   - **Category**: Federated Link Aggregation & Threaded Discussion
+   - **Overview**: The premier Rust-based federated alternative to Reddit. Forms the backbone of the "Threadiverse" alongside Mbin and PieFed. Features aggregate vote scores (+/-), live comment updates, multi-theme UI, fast arm64/Raspberry Pi hosting, and federated community subscriptions across hundreds of independent server instances.
+
+6. ### **Diaspora\*** [![GitHub stars](https://img.shields.io/github/stars/diaspora/diaspora?style=social&color=white)](https://github.com/diaspora/diaspora/stargazers)
+   - **Repository**: [diaspora/diaspora](https://github.com/diaspora/diaspora) *(License: AGPL-3.0)*
+   - **Category**: Distributed Privacy-Aware Social Network
+   - **Overview**: A pioneer of privacy-aware distributed social networking. Built around the concept of independent "pods" connected via the Diaspora protocol, enabling users to organize relationships into discrete "Aspects" (family, work, friends) so updates are shared strictly with chosen audiences without corporate tracking.
+
+7. ### **Nostr Protocol** [![GitHub stars](https://img.shields.io/github/stars/nostr-protocol/nostr?style=social&color=white)](https://github.com/nostr-protocol/nostr/stargazers)
+   - **Repository**: [nostr-protocol/nostr](https://github.com/nostr-protocol/nostr) *(License: Public Domain)*
+   - **Category**: Decentralized Relays & Cryptographic Notes
+   - **Overview**: **N**otes and **O**ther **S**tuff **T**ransmitted by **R**elays—an ultra-minimalist, censorship-resistant, decentralized communication protocol based on Schnorr cryptographic signatures and lightweight JSON relays over WebSockets. Users maintain their identity via public/private keys without servers, email verification, or central gatekeepers.
+
+8. ### **Matrix Synapse** [![GitHub stars](https://img.shields.io/github/stars/matrix-org/synapse?style=social&color=white)](https://github.com/matrix-org/synapse) [![Matrix Synapse stars](https://img.shields.io/github/stars/matrix-org/synapse?style=social&color=white)](https://github.com/matrix-org/synapse/stargazers)
+   - **Repository**: [matrix-org/synapse](https://github.com/matrix-org/synapse) *(License: AGPL-3.0)*
+   - **Category**: Federated Real-Time Communication & Spaces
+   - **Overview**: The reference homeserver implementation for Matrix, the open standard for secure, decentralized, end-to-end encrypted messaging, voice, video, and community "Spaces". Matrix bridges to Slack, Discord, IRC, and Signal, providing decentralized real-time group collaboration.
+
+9. ### **Owncast** [![GitHub stars](https://img.shields.io/github/stars/owncast/owncast?style=social&color=white)](https://github.com/owncast/owncast/stargazers)
+   - **Repository**: [owncast/owncast](https://github.com/owncast/owncast) *(License: MIT)*
+   - **Category**: Self-Hosted Live Video Streaming & Social Chat
+   - **Overview**: The open-source, self-hosted alternative to Twitch. Packed with built-in Fediverse integration via ActivityPub, allowing users across Mastodon and other platforms to follow your live stream, get notified when you go live, and interact directly in the stream chat.
+
+10. ### **Misskey** [![GitHub stars](https://img.shields.io/github/stars/misskey-dev/misskey?style=social&color=white)](https://github.com/misskey-dev/misskey/stargazers)
+    - **Repository**: [misskey-dev/misskey](https://github.com/misskey-dev/misskey) *(License: AGPL-3.0)*
+    - **Category**: Feature-Rich Federated Microblogging & Widgets
+    - **Overview**: An expressive, dynamic ActivityPub microblogging platform created in Japan with TypeScript and Vue.js. Renowned for custom emoji reactions, customizable UI widgets, antenna search feeds, built-in mini-games, and rich drive storage capabilities.
+
+11. ### **Bluesky ATProto** [![GitHub stars](https://img.shields.io/github/stars/bluesky-social/atproto?style=social&color=white)](https://github.com/bluesky-social/atproto/stargazers)
+    - **Repository**: [bluesky-social/atproto](https://github.com/bluesky-social/atproto) *(License: Apache-2.0 / MIT)*
+    - **Category**: Authenticated Transfer Protocol & Decentralized Social Graphs
+    - **Overview**: The core specifications and reference code powering Bluesky. ATProto introduces cryptographic account portability (DID-based identities), algorithmic choice with custom user-selectable feeds, and federated Personal Data Servers (PDS), separating hosting from the global indexing relay.
+
+12. ### **Pixelfed** [![GitHub stars](https://img.shields.io/github/stars/pixelfed/pixelfed?style=social&color=white)](https://github.com/pixelfed/pixelfed/stargazers)
+    - **Repository**: [pixelfed/pixelfed](https://github.com/pixelfed/pixelfed) *(License: AGPL-3.0)*
+    - **Category**: Federated Photo & Media Sharing (Instagram Alternative)
+    - **Overview**: The ethical, privacy-focused visual sharing platform for the Fediverse. Offers photo filters, stories, collections, direct messaging, multi-factor authentication, and zero algorithmic manipulation or advertisement surveillance.
+
+13. ### **Flarum** [![GitHub stars](https://img.shields.io/github/stars/flarum/framework?style=social&color=white)](https://github.com/flarum/framework/stargazers)
+    - **Repository**: [flarum/framework](https://github.com/flarum/framework) *(License: MIT)*
+    - **Category**: Lightweight Modern Discussion Engine
+    - **Overview**: Delightfully simple and fast forum software built with modern PHP and Mithril.js. Requires a tiny server footprint (~256 MB RAM) compared to heavy enterprise alternatives. Boasts an ecosystem of 1,600+ community extensions for OAuth, SSO, gamification, and SEO.
+
+14. ### **Friendica** [![GitHub stars](https://img.shields.io/github/stars/friendica/friendica?style=social&color=white)](https://github.com/friendica/friendica/stargazers)
+    - **Repository**: [friendica/friendica](https://github.com/friendica/friendica) *(License: AGPL-3.0)*
+    - **Category**: Multi-Protocol Universal Social Communications Bridge
+    - **Overview**: The federation champion of the decentralized web (operating since 2010). Bridges ActivityPub, Diaspora, DFRN, OStatus, email (IMAP/SMTP), and RSS into a unified social feed with Facebook-style profile circles, events, RSVP systems, and granular per-post privacy controls.
+
+15. ### **Mbin** [![GitHub stars](https://img.shields.io/github/stars/MbinOrg/mbin?style=social&color=white)](https://github.com/MbinOrg/mbin/stargazers)
+    - **Repository**: [MbinOrg/mbin](https://github.com/MbinOrg/mbin) *(License: AGPL-3.0)*
+    - **Category**: Federated Microblogging & Link Aggregation (Kbin Evolution)
+    - **Overview**: An open-source, federated discussion platform created by the community as the successor to Kbin. Written in PHP/Symfony, it unites Reddit-style forum posts, link aggregation, and microblog feeds on ActivityPub.
+
+---
+
+### 🧩 Protocols & Independent Open-Source Platforms
+
+*Projects hosted on Codeberg, FramaGit, and independent decentralized code forges:*
+
+- **GoToSocial** ([Codeberg: superseriousbusiness/gotosocial](https://codeberg.org/superseriousbusiness/gotosocial)) *(License: AGPL-3.0)*  
+  ⚡ Written in Go, GoToSocial provides a minimalist, lightning-fast personal ActivityPub microblogging server. Consumes negligible server memory (~50–100MB), making it ideal for hosting your personal Fediverse identity on a Raspberry Pi or low-cost VPS.
+- **PieFed** ([Codeberg: rimu/pyfedi](https://codeberg.org/rimu/pyfedi)) *(License: AGPL-3.0)*  
+  🥧 A Python-based link aggregator and forum for the Threadiverse. Offers Lemmy/Reddit compatibility with alternate UI paradigms, customizable moderation queues, and lightweight resource requirements.
+- **Hubzilla** ([FramaGit: hubzilla/core](https://framagit.org/hubzilla/core)) *(License: MIT)*  
+  🛡️ The pioneer of nomadic identity via the Zot/Nomad protocol alongside ActivityPub. Enables your account, contacts, and posts to be cloned across redundant hubs—if your primary server vanishes, your decentralized identity survives uninterrupted.
+- **Discourse AI** — Official AI integration plugin for Discourse, providing vector semantic search, post summarization, and moderation automation.
+- **Lemmy UI** — The modular, ~80kB gzipped front-end client written in inferno-js for Lemmy servers.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly encouraged! Help us maintain the most comprehensive directory of decentralized social networks:
+
+1. 🍴 Fork the repository.
+2. 📝 Add or update an entry in `README.md` following the established formatting guidelines.
+3. 🔗 Verify that all project links, GitHub star badges, licenses, and official websites are valid and accurate.
+4. 🚀 Submit a Pull Request with a clear, concise description of your additions.
+
+---
+
+## 💖 Support
+
+If this curated decentralized social ecosystem tracker has helped you explore the Fediverse or architect sovereign community infrastructure, please consider supporting continued maintenance:
+
+- ⭐ **Star this repository** on GitHub to amplify its reach!
+- 🍴 **Fork and share** with fellow developers, privacy advocates, and community managers.
+- ☕ **Sponsor the Maintainer**: Support ongoing open-source research and directory curation via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Decentralized-Social-Networks&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Decentralized-Social-Networks&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer
+
+- This is an **independent, community-curated list** provided for educational and architectural research purposes. It does not constitute an endorsement.
+- Decentralized networks handling user content and identities should be rigorously assessed for **moderation governance**, **metadata leakage across relays**, **encryption models**, and **long-term server viability**.
+- **Link Aggregators vs. Microblogging**: Lemmy, Mbin, and PieFed prioritize community-based upvoting and threaded discussions ("Threadiverse"), whereas Mastodon and Misskey prioritize chronological microblog feeds. Choose based on whether your community needs broadcasts or forum conversations.
+- **Operational Overhead**: Self-hosting federated nodes grants complete data sovereignty, but administrators assume responsibility for automated backups, spam mitigation, media storage caching, and federation blocklists.
+
+---
+
+<div align="center">
+
+**Made with ❤️ for community managers, privacy advocates, and builders of the sovereign web.**
+
+</div>

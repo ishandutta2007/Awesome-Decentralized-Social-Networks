@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" style="background:#090d16; border-radius: 12px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#080c17" />
+    </linearGradient>
+
+    <!-- Glowing Accents -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <radialGradient id="node-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(-15px, 10px); opacity: 0.6; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+      50% { transform: scale(1.2) translate(20px, -15px); opacity: 0.5; }
+    }
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(7px); }
+    }
+    @keyframes dashLine {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes beacon {
+      0% { r: 5; opacity: 1; }
+      100% { r: 22; opacity: 0; }
+    }
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb2 10s ease-in-out infinite; transform-origin: 1000px 260px; }
+    .pill-1 { animation: floatPill1 6s ease-in-out infinite; }
+    .pill-2 { animation: floatPill2 5.5s ease-in-out infinite; }
+    .mesh-line { stroke-dasharray: 6, 6; animation: dashLine 4s linear infinite; }
+    .beacon-pulse { animation: beacon 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+
+  <!-- DYNAMIC BACKGROUND ELEMENTS -->
+  <!-- Ambient glowing spheres -->
+  <circle cx="180" cy="80" r="140" fill="#6366f1" class="orb-1" filter="url(#glow)" />
+  <circle cx="1020" cy="280" r="160" fill="#ec4899" class="orb-2" filter="url(#glow)" />
+  <circle cx="900" cy="60" r="110" fill="#06b6d4" opacity="0.18" filter="url(#glow)" />
+
+  <!-- Geometric Grid Accent (Subtle) -->
+  <g opacity="0.08" stroke="#cbd5e1" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <!-- Decentralized Mesh Network Connections -->
+  <g stroke="#6366f1" stroke-opacity="0.35" stroke-width="1.5">
+    <line x1="100" y1="60" x2="220" y2="150" class="mesh-line" />
+    <line x1="220" y1="150" x2="120" y2="280" />
+    <line x1="220" y1="150" x2="360" y2="90" class="mesh-line" />
+    <line x1="840" y1="80" x2="980" y2="140" class="mesh-line" />
+    <line x1="980" y1="140" x2="1100" y2="70" />
+    <line x1="980" y1="140" x2="1050" y2="270" class="mesh-line" />
+    <line x1="880" y1="260" x2="1050" y2="270" />
+  </g>
+
+  <!-- Network Nodes with Pulse -->
+  <g>
+    <!-- Left Cluster -->
+    <circle cx="100" cy="60" r="4" fill="#38bdf8" />
+    <circle cx="220" cy="150" r="6" fill="#818cf8" />
+    <circle cx="220" cy="150" r="6" fill="none" stroke="#818cf8" stroke-width="2" class="beacon-pulse" />
+    <circle cx="120" cy="280" r="4" fill="#a78bfa" />
+    <circle cx="360" cy="90" r="5" fill="#c084fc" />
+
+    <!-- Right Cluster -->
+    <circle cx="840" cy="80" r="5" fill="#38bdf8" />
+    <circle cx="980" cy="140" r="7" fill="#f472b6" />
+    <circle cx="980" cy="140" r="7" fill="none" stroke="#f472b6" stroke-width="2" class="beacon-pulse" />
+    <circle cx="1100" cy="70" r="4" fill="#fb7185" />
+    <circle cx="1050" cy="270" r="6" fill="#ec4899" />
+    <circle cx="880" cy="260" r="4" fill="#818cf8" />
+  </g>
+
+  <!-- Dynamic Floating Tech Badges (Sides, never obscuring center text) -->
+  <g class="pill-1">
+    <!-- ActivityPub badge left -->
+    <rect x="70" y="180" width="135" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" opacity="0.85"/>
+    <circle cx="88" cy="197" r="5" fill="#a855f7" />
+    <text x="102" y="202" fill="#e0e7ff" font-size="12" font-weight="600" letter-spacing="0.5">ActivityPub</text>
+  </g>
+
+  <g class="pill-2">
+    <!-- AT Protocol badge right -->
+    <rect x="1000" y="180" width="130" height="34" rx="17" fill="#082f49" stroke="#0ea5e9" stroke-width="1" opacity="0.85"/>
+    <circle cx="1018" cy="197" r="5" fill="#38bdf8" />
+    <text x="1032" y="202" fill="#e0f2fe" font-size="12" font-weight="600" letter-spacing="0.5">ATProto / Nostr</text>
+  </g>
+
+  <!-- FOREGROUND BRANDING (Protected & High-Contrast) -->
+  <g text-anchor="middle">
+    <!-- Category Pill Tag -->
+    <rect x="460" y="44" width="280" height="32" rx="16" fill="rgba(99, 102, 241, 0.15)" stroke="#6366f1" stroke-width="1.2" />
+    <text x="600" y="65" fill="#a5b4fc" font-size="12" font-weight="700" letter-spacing="2">FEDIVERSE &amp; DECENTRALIZED WEB</text>
+
+    <!-- Main Title with Gradient Glow -->
+    <text x="600" y="145" fill="url(#primary-glow)" font-size="44" font-weight="900" letter-spacing="-0.5" filter="drop-shadow(0 4px 16px rgba(99, 102, 241, 0.45))">
+      Awesome Decentralized Social Networks
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="195" fill="#f8fafc" font-size="18" font-weight="500" letter-spacing="0.2">
+      Curated Landscape of Federated Protocols, Open-Source Platforms &amp; Community Ecosystems
+    </text>
+
+    <!-- Feature Highlights Bar -->
+    <g transform="translate(0, 240)">
+      <rect x="250" y="0" width="700" height="48" rx="24" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1" />
+      
+      <circle cx="300" cy="24" r="4" fill="#10b981" />
+      <text x="315" y="29" text-anchor="start" fill="#cbd5e1" font-size="13" font-weight="600">ActivityPub</text>
+
+      <circle cx="425" cy="24" r="4" fill="#3b82f6" />
+      <text x="440" y="29" text-anchor="start" fill="#cbd5e1" font-size="13" font-weight="600">ATProto &amp; Nostr</text>
+
+      <circle cx="585" cy="24" r="4" fill="#8b5cf6" />
+      <text x="600" y="29" text-anchor="start" fill="#cbd5e1" font-size="13" font-weight="600">Link Aggregators</text>
+
+      <circle cx="755" cy="24" r="4" fill="#ec4899" />
+      <text x="770" y="29" text-anchor="start" fill="#cbd5e1" font-size="13" font-weight="600">Federated Media</text>
+    </g>
+  </g>
+</svg>
