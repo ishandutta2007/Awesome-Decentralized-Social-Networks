@@ -40,37 +40,19 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+### Sector Overview & Market Dynamics
+
+The global dedicated online community and enterprise social network platform market is estimated at approximately $1.5B to $2.2B (expected to surpass $5B+ by the early 2030s), while the broader social networking ecosystem exceeds $150B+. The sector exhibits a bifurcated market structure: the consumer social layer is concentrated and dominated by winner-take-most ad platforms, whereas the community and discussion software SaaS space is moderately-to-highly fragmented across creator niches, developer forums, and enterprise customer-success hubs.
+
 ## SaaS/Hosted Platforms
 
-
-
-- **Reddit**  
-
-  The centralized link aggregator standard. Fully proprietary and cloud-hosted. **No federation, no self-hosting**—the platform operator controls moderation policy, API access, and data. Best for communities that prioritize network effects and reach over sovereignty.
-
-
-
-- **Discourse (Hosted)**  
-
-  **Official managed hosting** for Discourse forums. Features **business-class hosting** with automatic updates and support . **Note**: The software itself is open source (GPL v2)—hosting is a convenience service. **Best for**: teams wanting Discourse's features without server management.
-
-
-
-- **Circle.so**  
-
-  Centralized community platform for creators and businesses. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for creators wanting a polished, managed community experience.
-
-
-
-- **Mighty Networks**  
-
-  Centralized community and course platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for creators combining community with paid content.
-
-
-
-- **Khoros Communities**  
-
-  Enterprise community platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for large enterprises needing integrated social customer care.
+| Product | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **Reddit** | ~$30B–$35B market cap ($2.2B FY2025 revenue) | $0 (Ad-supported user model); Reddit Premium starts at $5.99/mo | Free forever plan with full access to browse, post, and create communities (ad-supported; API subject to standard free tier rate limits: 100 queries/min) | The centralized link aggregator standard. Fully proprietary and cloud-hosted. **No federation, no self-hosting**—the platform operator controls moderation policy, API access, and data. Best for communities that prioritize network effects and reach over sovereignty. |
+| **Khoros Communities** | ~$250M–$284M annual revenue (Acquired by IgniteTech, private) | Starts at ~$50,000/year (~$4,166/mo entry mid-market/enterprise contract) | No free tier or public self-serve trial (requires a scheduled sales-assisted demo) | Enterprise community platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for large enterprises needing integrated social customer care. |
+| **Circle.so** | ~$55M–$68M ARR ($33M+ funding, private) | $89/mo (billed annually) or $99/mo (billed monthly) on Professional Plan | 14-day free trial on Professional and Business plans (full feature access, up to 3 admins and 10 moderators; no credit card required) | Centralized community platform for creators and businesses. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for creators wanting a polished, managed community experience. |
+| **Discourse (Hosted)** | ~$10M–$15M ARR (Private) | $0/mo (Free Managed Plan); Paid managed plans start at $100/mo (Standard) | Free forever managed plan hosted on `.discourse.group` subdomain (limited to 2 staff seats, 5GB storage, 20,000 monthly emails, and community plugin set) | **Official managed hosting** for Discourse forums. Features **business-class hosting** with automatic updates and support. **Note**: The software itself is open source (GPL v2)—hosting is a convenience service. **Best for**: teams wanting Discourse's features without server management. |
+| **Mighty Networks** | ~$8M–$10M annual revenue (~$100M–$250M valuation, private) | $79/mo (billed annually) or $95/mo (billed monthly) on Launch Plan ($29/mo on Explore Plan) | 14-day free trial with full Growth Plan features (unlimited members, events, spaces, and course creation testing; no credit card required) | Centralized community and course platform. Fully proprietary and cloud-hosted. **No federation or self-hosting**—best for creators combining community with paid content. |
 
 
 
